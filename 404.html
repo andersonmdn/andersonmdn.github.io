@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecionando... — Anderson Feliciano André</title>
+    <meta name="robots" content="noindex" />
+    <!--
+      GitHub Pages SPA redirect strategy:
+      Saves the current URL to sessionStorage and redirects to the root,
+      where the React app picks it up and handles the route.
+      For this portfolio (single-page, anchor-based navigation),
+      this simply redirects any unknown path to the homepage.
+    -->
+    <script>
+      // User site (andersonmdn.github.io) — always redirect to root.
+      window.location.replace('/')
+    </script>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #030712;
+        color: #d1d5db;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Redirecionando...</p>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d9468" />
+
+    <!-- SEO -->
+    <title>Anderson Feliciano André — Desenvolvedor de Software Sênior</title>
+    <meta name="description" content="Portfólio de Anderson Feliciano André, Desenvolvedor de Software Sênior com mais de 11 anos de experiência em sistemas críticos, PowerBuilder, SQL Anywhere e em transição para Backend/Fullstack moderno." />
+    <meta name="author" content="Anderson Feliciano André" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anderson Feliciano André — Desenvolvedor de Software Sênior" />
+    <meta property="og:description" content="Mais de 11 anos em sistemas críticos. Sólida expertise em SQL performance, PowerBuilder e SQL Anywhere. Em transição ativa para Backend/Fullstack com React, .NET e PL/SQL." />
+    <meta property="og:url" content="https://andersonmdn.github.io/" />
+    <meta property="og:locale" content="pt_BR" />
+    <!-- TODO: Adicionar og:image (imagem de preview 1200x630px) -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Anderson Feliciano André — Desenvolvedor de Software Sênior" />
+    <meta name="twitter:description" content="Portfólio profissional de Anderson Feliciano André." />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Preload theme to avoid FOUC.
+      Must run before React hydration.
+    -->
+    <script>
+      ;(function () {
+        try {
+          var s = localStorage.getItem('theme')
+          var dark = s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.classList.toggle('dark', dark)
+        } catch (_) {}
+      })()
+    </script>
+  </head>
+  <body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
