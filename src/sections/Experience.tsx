@@ -42,7 +42,7 @@ export function Experience() {
                   <ScrollReveal key={roleIndex} delay={roleIndex * 80 + 120} className="relative mb-10 last:mb-0">
                     {/* Timeline dot */}
                     <div
-                      className="absolute -left-6 sm:-left-8 top-1.5 flex items-center justify-center"
+                      className="absolute -left-6 sm:-left-8 top-1.5 flex items-center justify-center -translate-x-1/2"
                       aria-hidden="true"
                     >
                       <div className={`h-3 w-3 rounded-full border-2 ${

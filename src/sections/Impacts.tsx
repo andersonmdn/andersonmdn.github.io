@@ -40,7 +40,7 @@ export function Impacts() {
               <ScrollReveal key={i} delay={i * 60}>
                 <article className="
                   group flex flex-col gap-4 rounded-xl border border-gray-200 dark:border-gray-800
-                  bg-white dark:bg-gray-900 p-6
+                  bg-white dark:bg-gray-900 p-6 h-full
                   hover:border-accent/40 dark:hover:border-accent/30
                   hover:shadow-sm dark:hover:shadow-accent/5
                   transition-all duration-300

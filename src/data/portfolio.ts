@@ -25,14 +25,13 @@ export const navItems: NavItem[] = [
 export const person = {
   name: 'Anderson Feliciano André',
   headline: 'Desenvolvedor de Software Sênior',
-  subheadline: 'PowerBuilder · SQL Anywhere 16/17 · SQL Performance · Especialista em Sistemas Críticos',
+  subheadline: 'ERP · PowerBuilder · SQL Anywhere · Full Stack · Especialista em Sistemas Críticos',
   transitionNote: 'Em transição para Backend / Fullstack moderno',
   location: 'Criciúma, Santa Catarina, Brasil',
   github: 'https://github.com/andersonmdn',
   linkedin: 'https://www.linkedin.com/in/anderson-andre/',
   email: 'andersonmdn00@gmail.com',
-  // TODO: Substituir pela URL pública do currículo em PDF
-  resumeUrl: null as string | null,
+  resumeUrl: '/anderson_andre_resume.pdf' as string | null,
 }
 
 export const socialLinks: SocialLink[] = [
@@ -187,6 +186,11 @@ export const skillGroups: SkillGroup[] = [
       'Python',
       'JavaScript',
       'TypeScript',
+      'C#',
+      'Node.js',
+      'Fastify',
+      'Prisma',
+      'PostgreSQL',
       'DataStore / DataWindow',
       'PBNI',
     ],
@@ -212,12 +216,18 @@ export const skillGroups: SkillGroup[] = [
     label: 'Frentes de Estudo e Transição',
     skills: [
       'React',
+      'Next.js',
+      'Vue.js',
       'React Native',
       '.NET',
       'PL/SQL',
       'HTML5 & CSS3',
       'Tailwind CSS',
       'Vite',
+      'Docker',
+      'Git',
+      'Turborepo',
+      'pnpm',
     ],
   },
 ]
@@ -234,20 +244,20 @@ export const projects: Project[] = [
     status: 'real',
   },
   {
-    title: 'Repositório em destaque — TODO',
+    title: 'AstroMath',
     description:
-      'Espaço reservado para um projeto ou repositório em destaque.',
-    tags: [],
+      'Jogo multiplayer real-time de matemática. Salas ao vivo via WebSocket com Colyseus, ranking, autenticação e backend Fastify + Prisma. Monorepo com Turborepo, deploy na Vercel.',
+    tags: ['Next.js 15', 'React', 'TypeScript', 'Fastify', 'Prisma', 'Colyseus', 'PostgreSQL', 'Docker', 'Turborepo', 'Vitest'],
     href: null,
-    status: 'todo',
+    status: 'real',
   },
   {
-    title: 'Repositório em destaque — TODO',
+    title: 'Jogo de Palavras Cruzadas',
     description:
-      'Espaço reservado para um segundo projeto ou repositório em destaque.',
-    tags: [],
+      'App mobile multiplataforma de palavras cruzadas com monetização via anúncios e compras in-app (IAP), publicado no Google Play.',
+    tags: ['React Native', 'Expo', 'TypeScript', 'Mobile', 'Google Play'],
     href: null,
-    status: 'todo',
+    status: 'real',
   },
   {
     title: 'Estudos: React & Ecossistema Frontend',
@@ -287,9 +297,54 @@ export const projects: Project[] = [
 
 export const certifications: Certification[] = [
   {
-    title: 'JavaScript: Programando a Orientação a Objetos',
+    title: 'Full Cycle Tech Week — IA for Devs',
+    issuer: 'Full Cycle',
+    description: 'IA aplicada ao desenvolvimento de software: agentes, automações e ferramentas com LLMs.',
+  },
+  {
+    title: 'ChatGPT e programação',
     issuer: 'Alura',
-    description: 'Paradigma orientado a objetos com JavaScript, classes, herança e encapsulamento.',
+    description: 'Uso prático de ChatGPT para auxiliar no desenvolvimento de software e automação de tarefas.',
+  },
+  {
+    title: 'ChatGPT: otimizando a qualidade dos resultados',
+    issuer: 'Alura',
+    description: 'Técnicas de prompt engineering e uso produtivo de IA generativa no dia a dia.',
+  },
+  {
+    title: 'React Native com Expo',
+    issuer: 'Alura',
+    description: 'Desenvolvimento mobile multiplataforma com React Native e Expo.',
+  },
+  {
+    title: 'React com TypeScript',
+    issuer: 'Alura',
+    description: 'Componentes, hooks, gerenciamento de estado e tipagem estática com TypeScript.',
+  },
+  {
+    title: 'Vue 3',
+    issuer: 'Alura',
+    description: 'Desenvolvimento frontend reativo com Vue 3, Composition API e ecossistema.',
+  },
+  {
+    title: 'Python: OO, APIs e aplicações',
+    issuer: 'Alura',
+    description: 'Orientação a objetos, consumo de APIs e desenvolvimento de aplicações com Python.',
+  },
+  {
+    title: 'Git e GitHub',
+    issuer: 'Alura',
+    description: 'Controle de versão, fluxo de trabalho com branches e colaboração via GitHub.',
+  },
+  {
+    title: 'Aprender a aprender',
+    issuer: 'Alura',
+    description: 'Técnicas de aprendizado eficaz, foco e produtividade para desenvolvimento contínuo.',
+  },
+  {
+    title: 'Relacionamento interpessoal',
+    issuer: 'Alura',
+    description: 'Comunicação, colaboração e habilidades interpessoais no ambiente profissional.',
   },
   {
     title: 'ESLint: padronizando código com regras personalizadas',
@@ -297,9 +352,14 @@ export const certifications: Certification[] = [
     description: 'Configuração e criação de regras customizadas de linting para padronização de código.',
   },
   {
-    title: 'ChatGPT: otimizando a qualidade dos resultados',
+    title: 'JavaScript: Programando a Orientação a Objetos',
     issuer: 'Alura',
-    description: 'Técnicas de prompt engineering e uso produtivo de IA generativa no dia a dia.',
+    description: 'Paradigma orientado a objetos com JavaScript, classes, herança e encapsulamento.',
+  },
+  {
+    title: 'Expressões regulares',
+    issuer: 'Alura',
+    description: 'Construção e uso de regex para validação, busca e manipulação de texto.',
   },
   {
     title: 'HTML5 e CSS3: parte 1',
@@ -310,5 +370,15 @@ export const certifications: Certification[] = [
     title: 'HTML5 e CSS3: parte 2',
     issuer: 'Alura',
     description: 'Aprofundamento em CSS3: layouts, responsividade e boas práticas.',
+  },
+  {
+    title: 'Design Patterns em Java',
+    issuer: 'Alura',
+    description: 'Padrões de projeto clássicos (GoF) aplicados com Java.',
+  },
+  {
+    title: 'Fullstack Java + AngularJS',
+    issuer: 'LabTrack',
+    description: 'Desenvolvimento fullstack com Java no backend e AngularJS no frontend.',
   },
 ]

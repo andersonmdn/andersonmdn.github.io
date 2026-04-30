@@ -19,7 +19,7 @@ export function Certifications() {
             <ScrollReveal key={i} delay={i * 60}>
               <article className="
                 flex flex-col gap-2 rounded-xl border border-gray-200 dark:border-gray-800
-                bg-white dark:bg-gray-900 p-5
+                bg-white dark:bg-gray-900 p-5 h-full
                 hover:border-accent/30 dark:hover:border-accent/20
                 hover:shadow-sm transition-all duration-300
               ">
