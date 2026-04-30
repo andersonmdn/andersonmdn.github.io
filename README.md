@@ -271,10 +271,6 @@ portifolio/
 
 ## TODOs pendentes de configuração
 
-- [ ] `src/data/portfolio.ts` → `person.linkedin` — URL do perfil LinkedIn
-- [ ] `src/data/portfolio.ts` → `person.email` — E-mail profissional
-- [ ] `src/data/portfolio.ts` → `person.resumeUrl` — URL do currículo PDF
-- [ ] `src/data/portfolio.ts` → projetos com `status: 'todo'` — Repositórios em destaque
 - [ ] `index.html` → `og:url` e `og:image` — URL pública e imagem de preview
 - [ ] `public/` → adicionar foto profissional (se desejado)
 - [ ] `.github/workflows/deploy.yml` → descomentar `VITE_BASE: /` se usar user site
